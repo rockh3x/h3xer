@@ -1,0 +1,69 @@
+# H3XER Common Rules
+# Each line is a rule chain, applied to dictionary words
+# Format: rule1:arg rule2:arg ...
+# 
+# Available rules:
+#   l       - lowercase
+#   u       - uppercase  
+#   c       - capitalize first
+#   t       - toggle case
+#   r       - reverse
+#   d       - duplicate
+#   $X      - append char X
+#   ^X      - prepend char X
+#   L       - l33t substitution
+#   {       - rotate left
+#   }       - rotate right
+#   [       - delete first
+#   ]       - delete last
+
+# === Basic Transforms ===
+:                   # no change (original)
+l                   # lowercase
+u                   # uppercase
+c                   # Capitalize
+
+# === Common Suffixes ===
+$1                  # word1
+$!                  # word!
+$1$2$3              # word123
+$2$0$2$4            # word2024
+$2$0$2$5            # word2025
+
+# === Capitalize + Suffix ===
+c$1                 # Word1
+c$!                 # Word!
+c$1$2$3             # Word123
+
+# === L33t Variations ===
+L                   # w0rd
+cL                  # W0rd
+cL$1                # W0rd1
+
+# === Duplicates ===
+d                   # wordword
+cd                  # WordWord
+
+# === Reversed ===
+r                   # drow
+cr                  # Drow
+
+# === Year Suffixes ===
+$1$9$9$9            # word1999
+$2$0$0$0            # word2000
+$2$0$1$0            # word2010
+$2$0$2$0            # word2020
+$2$0$2$1            # word2021
+$2$0$2$2            # word2022
+$2$0$2$3            # word2023
+$2$0$2$4            # word2024
+$2$0$2$5            # word2025
+$2$0$2$6            # word2026
+
+# === Prepend ===
+^1                  # 1word
+^!                  # !word
+
+# === Combined ===
+c$1$!               # Word1!
+cL$!                # W0rd!
