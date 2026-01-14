@@ -1,3 +1,6 @@
+Disclaimer: This tool is for educational purposes and password recovery only. The author is not responsible for any illegal use of this tool. Do not use this tool on files you do not own or do not have permission to access.
+
+
 # H3XER - High-Performance RAR5 Password Recovery
 
 ```
