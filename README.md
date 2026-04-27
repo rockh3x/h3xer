@@ -74,3 +74,14 @@ src/      main.cu h3xer_extract.cpp test_crypto.cu
 ## License
 
 For authorized password recovery only.
+
+## Research Citation
+
+@misc{patel2026h3xer,
+  author       = {Patel, Vivek},
+  title        = {H3XER: CUDA-Accelerated Password Recovery for Encrypted Archives},
+  year         = 2026,
+  publisher    = {Zenodo},
+  doi          = {(https://doi.org/10.5281/zenodo.19814983)},
+  url          = {https://doi.org/10.5281/zenodo.19814983}
+}
