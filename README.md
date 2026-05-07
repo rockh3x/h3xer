@@ -77,5 +77,5 @@ For authorized password recovery only.
 
 ## Research Citation
 
-  doi          = {(https://doi.org/10.5281/zenodo.19814983)},
-  url          = {https://doi.org/10.5281/zenodo.19814983}
+  doi          = https://doi.org/10.5281/zenodo.19814983
+
